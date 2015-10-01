@@ -76,3 +76,12 @@ EditAction 1443691718218 TestSudokuVerifier.java 1224 5 7 2
 UnitTestCaseAction 1443691718726 TestSudokuVerifier.java FAIL
 UnitTestSessionAction 1443691718727 TestSudokuVerifier FAIL
 EditAction 1443691726804 TestSudokuVerifier.java 1227 5 7 2
+UnitTestCaseAction 1443691727260 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443691727261 TestSudokuVerifier OK
+RefactoringAction 1443691891244 TestSudokuVerifier.java ADD void should_ FIELD
+RefactoringAction 1443691900779 TestSudokuVerifier.java RENAME should_=>void should_throw_error_on_non_digit_input FIELD
+RefactoringAction 1443691903302 TestSudokuVerifier.java RENAME should_throw_error_on_non_digit_input=>void should_throw_error_on_non_digit_input() METHOD
+RefactoringAction 1443691920398 TestSudokuVerifier.java RENAME should_throw_error_on_non_digit_input()=>void should_throw_exception_on_non_digit_input() METHOD
+RefactoringAction 1443691924432 TestSudokuVerifier.java RENAME should_throw_error_on_too_short_input()=>void should_throw_exception_on_too_short_input() METHOD
+RefactoringAction 1443691927461 TestSudokuVerifier.java RENAME should_throw_error_on_too_long_input()=>void should_throw_expection_on_too_long_input() METHOD
+EditAction 1443692026220 TestSudokuVerifier.java 1478 6 10 2

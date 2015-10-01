@@ -30,12 +30,21 @@ public class TestSudokuVerifier {
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
-	public void should_throw_error_on_too_long_input() {
+	public void should_throw_expection_on_too_long_input() {
 		verifier.verify(SOLUTION_VALID + "a");
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
-	public void should_throw_error_on_too_short_input() {
+	public void should_throw_exception_on_too_short_input() {
 		verifier.verify(SOLUTION_VALID.substring(0, SOLUTION_VALID.length() -1));
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void should_throw_exception_on_non_digit_input() {
+		String testSolution = "";
+		for (int i = 0; i < 81; i++) {
+			testSolution += "a";
+		}
+		verifier.verify(testSolution);
 	}
 }
