@@ -104,3 +104,14 @@ RefactoringAction 1443692525537 TestSudokuVerifier.java RENAME should_return_neg
 RefactoringAction 1443692529054 TestSudokuVerifier.java RENAME should_return_negative_one_if_sub_grid_contains_multiple()=>void should_return_negative_one_if_sub_grid_contains_multiples_of_same_digit() METHOD
 RefactoringAction 1443692578723 TestSudokuVerifier.java RENAME should_return_negative_one_if_sub_grid_contains_multiples_of_same_digit()=>void should_return_negative_two_if_sub_grid_contains_multiples_of_same_digit() METHOD
 EditAction 1443692585744 TestSudokuVerifier.java 1769 7 13 3
+UnitTestCaseAction 1443692586354 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1443692586356 TestSudokuVerifier FAIL
+RefactoringAction 1443692602039 SudokuVerifier.java ADD int RESULT_ FIELD
+RefactoringAction 1443692609063 SudokuVerifier.java RENAME RESULT_=>int RESULT_INVALID_R FIELD
+RefactoringAction 1443692610073 SudokuVerifier.java RENAME RESULT_INVALID_R=>int RESULT_INVALID_ FIELD
+RefactoringAction 1443692612088 SudokuVerifier.java RENAME RESULT_INVALID_=>int RESULT_INVALID FIELD
+RefactoringAction 1443692615609 SudokuVerifier.java RENAME RESULT_INVALID=>int FAIL_CONTAINS_ FIELD
+RefactoringAction 1443692625639 SudokuVerifier.java RENAME FAIL_CONTAINS_=>int FAIL_SUBGRID_CONTAINS_MULTIPLES FIELD
+RefactoringAction 1443692637154 SudokuVerifier.java RENAME RESULT_CORRECT=>int CORRECT FIELD
+RefactoringAction 1443692639693 SudokuVerifier.java RENAME CORRECT=>int RESULT_CORRECT FIELD
+EditAction 1443692640246 TestSudokuVerifier.java 1762 7 13 3

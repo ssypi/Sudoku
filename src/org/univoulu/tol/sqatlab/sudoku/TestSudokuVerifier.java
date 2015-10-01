@@ -20,7 +20,7 @@ public class TestSudokuVerifier {
 	@Test
 	public void should_return_zero_for_valid_solution() {
 		int result = verifier.verify(SOLUTION_VALID);
-		assertEquals(SudokuVerifier.RESULT_CORRECT, result);		
+		assertEquals(SudokuVerifier.SUCCESS, result);		
 	}
 	
 	@Test
