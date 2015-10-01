@@ -33,3 +33,15 @@ RefactoringAction 1443689361952 TestSudokuVerifier.java RENAME should_fail_=>voi
 RefactoringAction 1443689386605 TestSudokuVerifier.java ADD SudokuVerifier verifier FIELD
 RefactoringAction 1443689386606 TestSudokuVerifier.java ADD void setup() METHOD
 EditAction 1443689435080 TestSudokuVerifier.java 871 3 5 2
+CompilationAction 1443689435247 TestSudokuVerifier.java
+RefactoringAction 1443689445822 TestSudokuVerifier.java ADD import org.junit.Before IMPORT
+CompilationAction 1443689451441 TestSudokuVerifier.java
+UnitTestCaseAction 1443689451829 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443689451830 TestSudokuVerifier OK
+RefactoringAction 1443689886394 TestSudokuVerifier.java RENAME should_accept_correct_solution()=>void should_return_zero_accept_correct_solution() METHOD
+RefactoringAction 1443689888928 TestSudokuVerifier.java RENAME should_return_zero_accept_correct_solution()=>void should_return_zero_for_accept_correct_solution() METHOD
+RefactoringAction 1443689892473 TestSudokuVerifier.java RENAME should_return_zero_for_accept_correct_solution()=>void should_return_zero_for_valid_solution() METHOD
+RefactoringAction 1443689897504 TestSudokuVerifier.java RENAME SOLUTION_CORRECT=>String SOLUTION_VALID FIELD
+RefactoringAction 1443689951173 TestSudokuVerifier.java RENAME should_fail_on_incorrect_solution()=>void should_return_less_than_zero_on_incorrect_solution() METHOD
+RefactoringAction 1443689954229 TestSudokuVerifier.java RENAME should_return_less_than_zero_on_incorrect_solution()=>void should_return_less_than_zero_for_incorrect_solution() METHOD
+EditAction 1443689980821 TestSudokuVerifier.java 887 3 5 2
