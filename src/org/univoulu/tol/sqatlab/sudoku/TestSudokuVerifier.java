@@ -28,5 +28,10 @@ public class TestSudokuVerifier {
 		int result = verifier.verify(SOLUTION_INCORRECT);
 		assertTrue(result < 0);
 	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void should_throw_error_on_too_long_input() {
+		verifier.verify(SOLUTION_VALID + SOLUTION_INCORRECT);
+	}
 
 }

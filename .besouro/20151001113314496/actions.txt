@@ -49,3 +49,9 @@ UnitTestCaseAction 1443689981294 TestSudokuVerifier.java FAIL
 UnitTestSessionAction 1443689981295 TestSudokuVerifier FAIL
 RefactoringAction 1443690027437 SudokuVerifier.java REMOVE RESULT_INCORRECT FIELD
 EditAction 1443690040564 SudokuVerifier.java 561 1 1 0
+UnitTestCaseAction 1443690041053 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443690041054 TestSudokuVerifier OK
+RefactoringAction 1443690220966 TestSudokuVerifier.java ADD void should_throw_error_on_invalid FIELD
+RefactoringAction 1443690238514 TestSudokuVerifier.java RENAME should_throw_error_on_invalid=>void should_throw_error_on_too_long FIELD
+RefactoringAction 1443690242539 TestSudokuVerifier.java RENAME should_throw_error_on_too_long=>void should_throw_error_on_too_long_input() METHOD
+EditAction 1443690368318 TestSudokuVerifier.java 1055 4 6 2
