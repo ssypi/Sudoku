@@ -31,6 +31,11 @@ public class TestSudokuVerifier {
 	
 	@Test(expected=IllegalArgumentException.class)
 	public void should_throw_error_on_too_long_input() {
-		verifier.verify(SOLUTION_VALID + SOLUTION_INCORRECT);
+		verifier.verify(SOLUTION_VALID + "a");
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void should_throw_error_on_too_short_input() {
+		verifier.verify(SOLUTION_VALID.subSequence(0, SOLUTION_VALID.length()-2).toString());
 	}
 }

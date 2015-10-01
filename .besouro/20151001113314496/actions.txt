@@ -61,3 +61,9 @@ EditAction 1443690482322 TestSudokuVerifier.java 1053 4 6 2
 UnitTestCaseAction 1443690482776 TestSudokuVerifier.java FAIL
 UnitTestSessionAction 1443690482777 TestSudokuVerifier FAIL
 EditAction 1443691477852 SudokuVerifier.java 820 1 2 0
+UnitTestCaseAction 1443691478358 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443691478359 TestSudokuVerifier OK
+RefactoringAction 1443691520413 TestSudokuVerifier.java ADD void should_throw_error_on_ FIELD
+RefactoringAction 1443691523448 TestSudokuVerifier.java RENAME should_throw_error_on_=>void should_throw_error_on_too FIELD
+RefactoringAction 1443691528477 TestSudokuVerifier.java RENAME should_throw_error_on_too=>void should_throw_error_on_too_short_input() METHOD
+EditAction 1443691649964 TestSudokuVerifier.java 1239 5 7 2
