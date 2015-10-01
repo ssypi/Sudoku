@@ -9,6 +9,7 @@ public class SudokuVerifier {
 
 	public static final int SUCCESS = 0;
 	public static final int FAIL_SUBGRID_CONTAINS_MULTIPLES = -2;
+	public static final int FAIL_ROW_CONTAINS_MULTIPLES = -3;
 
 	private static final int SUB_GRID_LENGTH = 9;
 	
@@ -55,6 +56,16 @@ public class SudokuVerifier {
 			temp = temp.substring(SUB_GRID_LENGTH, temp.length());
 		}
 		
+		boolean rowsValid = true;
+		for(Set<Integer> row : rows) {
+			if (row.size() != 9) rowsValid = false;
+			for(Integer i : row) {
+				if (i == null || i < 0 || i > 9) rowsValid = false;
+			}
+		}
+		if (!rowsValid) {
+			return FAIL_ROW_CONTAINS_MULTIPLES;
+		}
 		
 		
 		if (candidateSolution.equals("417369825632158947958724316825437169791586432346912758289643571573291684164875293")) {

@@ -176,3 +176,7 @@ UnitTestSessionAction 1443695594096 TestSudokuVerifier FAIL
 RefactoringAction 1443695661054 SudokuVerifier.java ADD import java.util.Set IMPORT
 RefactoringAction 1443695781166 SudokuVerifier.java ADD import java.util.HashSet IMPORT
 EditAction 1443695882514 SudokuVerifier.java 2342 2 13 0
+UnitTestCaseAction 1443695883056 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1443695883057 TestSudokuVerifier FAIL
+RefactoringAction 1443695968200 SudokuVerifier.java ADD int FAIL_ROW_CONTAINS_MULTIPLES FIELD
+EditAction 1443695976661 SudokuVerifier.java 2670 2 16 0
