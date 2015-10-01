@@ -19,3 +19,9 @@ RefactoringAction 1443688927906 SudokuVerifier.java ADD int RESULT_CORRECT FIELD
 RefactoringAction 1443688963680 SudokuVerifier.java REMOVE RESULT_INCORRECT FIELD
 RefactoringAction 1443688963681 SudokuVerifier.java REMOVE RESULT_CORRECT FIELD
 EditAction 1443688981090 TestSudokuVerifier.java 671 2 4 1
+UnitTestCaseAction 1443688982331 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1443688982342 TestSudokuVerifier FAIL
+RefactoringAction 1443689000968 TestSudokuVerifier.java REMOVE test() METHOD
+RefactoringAction 1443689048336 SudokuVerifier.java ADD Object RESULT_CORRECT FIELD
+RefactoringAction 1443689060026 SudokuVerifier.java ADD int RESULT_INCORRECT FIELD
+EditAction 1443689272522 TestSudokuVerifier.java 629 1 3 1
