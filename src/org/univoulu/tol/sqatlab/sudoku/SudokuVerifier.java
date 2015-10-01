@@ -12,6 +12,7 @@ public class SudokuVerifier {
 	public static final int FAIL_ROW_CONTAINS_MULTIPLES = -3;
 
 	private static final int SUB_GRID_LENGTH = 9;
+	private static final int ROW_LENGTH = 9;
 	
 	/**
 	 * Verifies the given sudoku solution
@@ -46,14 +47,14 @@ public class SudokuVerifier {
 		List<Set<Integer>> rows = new ArrayList<>();
 		temp = candidateSolution;
 		while(temp.length() > 9) {
-			String gridString = temp.substring(0, SUB_GRID_LENGTH);
+			String gridString = temp.substring(0, ROW_LENGTH);
 			Set<Integer> row = new HashSet<>();
 			for(char c : gridString.toCharArray()) {
 				int cell = Character.getNumericValue(c);
 				row.add(cell);
 			}
 			rows.add(row);
-			temp = temp.substring(SUB_GRID_LENGTH, temp.length());
+			temp = temp.substring(ROW_LENGTH, temp.length());
 		}
 		
 		boolean rowsValid = true;

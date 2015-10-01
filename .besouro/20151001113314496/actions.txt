@@ -183,3 +183,7 @@ EditAction 1443695976661 SudokuVerifier.java 2670 2 16 0
 UnitTestCaseAction 1443695977207 TestSudokuVerifier.java FAIL
 UnitTestSessionAction 1443695977208 TestSudokuVerifier FAIL
 EditAction 1443695991923 SudokuVerifier.java 2674 2 16 0
+UnitTestCaseAction 1443695992431 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1443695992432 TestSudokuVerifier FAIL
+RefactoringAction 1443696020369 SudokuVerifier.java ADD int ROW_LENGTH FIELD
+EditAction 1443705228371 SudokuVerifier.java 2707 2 16 0
