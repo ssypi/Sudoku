@@ -6,6 +6,6 @@ public class SubGrid {
 	private final List<Integer> cells;
 	
 	public SubGrid(String subgrid) {
-		
+		cells = null;
 	}
 }
