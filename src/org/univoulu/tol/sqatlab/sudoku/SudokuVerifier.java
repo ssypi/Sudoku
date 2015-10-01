@@ -13,6 +13,9 @@ public class SudokuVerifier {
 		if (candidateSolution == null || candidateSolution.length() != 81) {
 			throw new IllegalArgumentException("Solution must be exactly 81 characters long (was " + candidateSolution.length() + ")");
 		}
+		if (!candidateSolution.matches("[0-9]+")) {
+			throw new IllegalArgumentException("Solution may only contain numbers 0-9 (was " + candidateSolution + ")");
+		}
 		
 		if (candidateSolution.equals("417369825632158947958724316825437169791586432346912758289643571573291684164875293")) {
 			return RESULT_CORRECT;

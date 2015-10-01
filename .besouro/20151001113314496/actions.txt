@@ -85,3 +85,6 @@ RefactoringAction 1443691920398 TestSudokuVerifier.java RENAME should_throw_erro
 RefactoringAction 1443691924432 TestSudokuVerifier.java RENAME should_throw_error_on_too_short_input()=>void should_throw_exception_on_too_short_input() METHOD
 RefactoringAction 1443691927461 TestSudokuVerifier.java RENAME should_throw_error_on_too_long_input()=>void should_throw_expection_on_too_long_input() METHOD
 EditAction 1443692026220 TestSudokuVerifier.java 1478 6 10 2
+UnitTestCaseAction 1443692026694 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1443692026695 TestSudokuVerifier FAIL
+EditAction 1443692155265 SudokuVerifier.java 985 1 3 0
