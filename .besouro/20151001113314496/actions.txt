@@ -115,3 +115,12 @@ RefactoringAction 1443692625639 SudokuVerifier.java RENAME FAIL_CONTAINS_=>int F
 RefactoringAction 1443692637154 SudokuVerifier.java RENAME RESULT_CORRECT=>int CORRECT FIELD
 RefactoringAction 1443692639693 SudokuVerifier.java RENAME CORRECT=>int RESULT_CORRECT FIELD
 EditAction 1443692640246 TestSudokuVerifier.java 1762 7 13 3
+CompilationAction 1443692640556 TestSudokuVerifier.java
+RefactoringAction 1443692678631 SubGrid.java ADD SubGrid.java CLASS
+FileOpenedAction 1443692678825 SubGrid.java 73 0 0 0
+RefactoringAction 1443692690327 SubGrid.java ADD List<Integer> numbers FIELD
+RefactoringAction 1443692693335 SubGrid.java RENAME numbers=>List<Integer> cells FIELD
+RefactoringAction 1443692708388 SubGrid.java ADD import java.util.List IMPORT
+RefactoringAction 1443692723415 SubGrid.java ADD SubGrid() METHOD
+RefactoringAction 1443692731943 SubGrid.java RENAME SubGrid()=>SubGrid(String) METHOD
+EditAction 1443692978603 SubGrid.java 180 1 0 0
