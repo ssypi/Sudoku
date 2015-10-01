@@ -1,0 +1,21 @@
+FileOpenedAction 1443688394881 SudokuVerifier.java 198 1 1 0
+FileOpenedAction 1443688468678 TestSudokuVerifier.java 216 1 1 0
+RefactoringAction 1443688477774 TestSudokuVerifier.java ADD void should FIELD
+RefactoringAction 1443688590409 TestSudokuVerifier.java ADD String SOLUTION_CORRECT FIELD
+RefactoringAction 1443688595937 TestSudokuVerifier.java ADD String SOLUTION_INCORRECT FIELD
+RefactoringAction 1443688630034 TestSudokuVerifier.java RENAME should=>void should_ FIELD
+RefactoringAction 1443688643058 TestSudokuVerifier.java RENAME should_=>void should_accept_correct_solution FIELD
+RefactoringAction 1443688656115 TestSudokuVerifier.java RENAME should_accept_correct_solution=>void should_accept_correct_solution() METHOD
+RefactoringAction 1443688815855 SudokuVerifier.java ADD int RESULT_ FIELD
+RefactoringAction 1443688823879 SudokuVerifier.java ADD int RESULT_CORRECT FIELD
+RefactoringAction 1443688828421 SudokuVerifier.java REMOVE RESULT_CORRECT FIELD
+RefactoringAction 1443688828422 SudokuVerifier.java REMOVE RESULT_ FIELD
+RefactoringAction 1443688870530 SudokuVerifier.java ADD Enum Result() METHOD
+RefactoringAction 1443688871558 SudokuVerifier.java RENAME Result()=>Enum Result FIELD
+RefactoringAction 1443688907813 SudokuVerifier.java ADD int RESULT_ FIELD
+RefactoringAction 1443688915833 SudokuVerifier.java RENAME RESULT_=>int SOLUTION_INC FIELD
+RefactoringAction 1443688922385 SudokuVerifier.java RENAME SOLUTION_INC=>int RESULT_INCORRECT FIELD
+RefactoringAction 1443688927906 SudokuVerifier.java ADD int RESULT_CORRECT FIELD
+RefactoringAction 1443688963680 SudokuVerifier.java REMOVE RESULT_INCORRECT FIELD
+RefactoringAction 1443688963681 SudokuVerifier.java REMOVE RESULT_CORRECT FIELD
+EditAction 1443688981090 TestSudokuVerifier.java 671 2 4 1
