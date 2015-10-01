@@ -16,12 +16,7 @@ public class SudokuVerifier {
 	 * @return {@link #SUCCESS} if solution is correct, else less than 0
 	 */
 	public int verify(String candidateSolution) {
-		if (candidateSolution == null || candidateSolution.length() != 81) {
-			throw new IllegalArgumentException("Solution must be exactly 81 characters long (was " + candidateSolution.length() + ")");
-		}
-		if (!candidateSolution.matches("[0-9]+")) {
-			throw new IllegalArgumentException("Solution may only contain numbers 0-9 (was " + candidateSolution + ")");
-		}
+		validateSolutionFormat(candidateSolution);
 		
 		List<SubGrid> subGrids = new ArrayList<>();
 		String temp = candidateSolution;
@@ -47,6 +42,17 @@ public class SudokuVerifier {
 			return SUCCESS;
 		} else {
 			return -1;
+		}
+	}
+	
+	private void validateSolutionFormat(String solution) throws IllegalArgumentException {
+		if (solution == null || solution.length() != 81) {
+			Integer length = null;
+			if (solution != null) length = solution.length();
+			throw new IllegalArgumentException("Solution must be exactly 81 characters long (was " + length + ")");
+		}
+		if (!solution.matches("[0-9]+")) {
+			throw new IllegalArgumentException("Solution may only contain numbers 0-9 (was " + solution + ")");
 		}
 	}
 }
