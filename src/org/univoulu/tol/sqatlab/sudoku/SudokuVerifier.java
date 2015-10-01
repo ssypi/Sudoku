@@ -1,7 +1,9 @@
 package org.univoulu.tol.sqatlab.sudoku;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class SudokuVerifier {
 
@@ -27,6 +29,7 @@ public class SudokuVerifier {
 			temp = temp.substring(SUB_GRID_LENGTH, temp.length());
 		}
 		
+		// validate grids
 		boolean allGridsValid = true;
 		for (SubGrid grid : subGrids) {
 			if (!grid.isValid()) {
@@ -37,6 +40,22 @@ public class SudokuVerifier {
 		if (!allGridsValid) {
 			return FAIL_SUBGRID_CONTAINS_MULTIPLES;
 		}
+		
+		// validate rows
+		List<Set<Integer>> rows = new ArrayList<>();
+		temp = candidateSolution;
+		while(temp.length() > 9) {
+			String gridString = temp.substring(0, SUB_GRID_LENGTH);
+			Set<Integer> row = new HashSet<>();
+			for(char c : gridString.toCharArray()) {
+				int cell = Character.getNumericValue(c);
+				row.add(cell);
+			}
+			rows.add(row);
+			temp = temp.substring(SUB_GRID_LENGTH, temp.length());
+		}
+		
+		
 		
 		if (candidateSolution.equals("417369825632158947958724316825437169791586432346912758289643571573291684164875293")) {
 			return SUCCESS;

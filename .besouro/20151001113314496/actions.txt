@@ -171,3 +171,8 @@ RefactoringAction 1443695444892 TestSudokuVerifier.java RENAME should_return_neg
 RefactoringAction 1443695456942 TestSudokuVerifier.java RENAME should_return_negative_three_if_=>void should_return_negative_three_if_row_contains_multiples FIELD
 RefactoringAction 1443695457978 TestSudokuVerifier.java RENAME should_return_negative_three_if_row_contains_multiples=>void should_return_negative_three_if_row_contains_multiples() METHOD
 EditAction 1443695593432 TestSudokuVerifier.java 2121 8 16 4
+UnitTestCaseAction 1443695594095 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1443695594096 TestSudokuVerifier FAIL
+RefactoringAction 1443695661054 SudokuVerifier.java ADD import java.util.Set IMPORT
+RefactoringAction 1443695781166 SudokuVerifier.java ADD import java.util.HashSet IMPORT
+EditAction 1443695882514 SudokuVerifier.java 2342 2 13 0
