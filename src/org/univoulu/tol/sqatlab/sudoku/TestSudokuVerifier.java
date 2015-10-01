@@ -33,5 +33,4 @@ public class TestSudokuVerifier {
 	public void should_throw_error_on_too_long_input() {
 		verifier.verify(SOLUTION_VALID + SOLUTION_INCORRECT);
 	}
-
 }
