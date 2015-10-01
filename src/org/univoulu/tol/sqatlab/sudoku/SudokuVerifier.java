@@ -6,11 +6,14 @@ public class SudokuVerifier {
 
 	/**
 	 * Verifies the given sudoku solution
-	 * @param candidateSolution 
-	 * @return {@link #RESULT_CORRECT} or {@link #RESULT_INCORRECT}
+	 * @param candidateSolution 81 characters long String where first 9 are the first row, second 9 are the second row etc.
+	 * @return {@link #RESULT_CORRECT} if solution is correct, else less than 0
 	 */
 	public int verify(String candidateSolution) {
-		// returns 1 if the candidate solution is correct
+		if (candidateSolution == null || candidateSolution.length() != 81) {
+			throw new IllegalArgumentException("Solution must be exactly 81 characters long (was " + candidateSolution.length() + ")");
+		}
+		
 		if (candidateSolution.equals("417369825632158947958724316825437169791586432346912758289643571573291684164875293")) {
 			return RESULT_CORRECT;
 		} else {
