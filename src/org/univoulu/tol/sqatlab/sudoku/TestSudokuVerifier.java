@@ -47,4 +47,11 @@ public class TestSudokuVerifier {
 		}
 		verifier.verify(testSolution);
 	}
+	
+	@Test
+	public void should_return_negative_two_if_sub_grid_contains_multiples_of_same_digit() {
+		String testSolution = "417369825612158947958724316825437169791586432346912758289643571573291684164875293";
+		int result = verifier.verify(testSolution);
+		assertEquals(-2, result);
+	}
 }
