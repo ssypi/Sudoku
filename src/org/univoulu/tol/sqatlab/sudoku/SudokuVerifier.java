@@ -2,8 +2,7 @@ package org.univoulu.tol.sqatlab.sudoku;
 
 public class SudokuVerifier {
 
-	public static final int RESULT_INCORRECT = 0;
-	public static final int RESULT_CORRECT = 1;
+	public static final int RESULT_CORRECT = 0;
 
 	/**
 	 * Verifies the given sudoku solution
@@ -15,7 +14,7 @@ public class SudokuVerifier {
 		if (candidateSolution.equals("417369825632158947958724316825437169791586432346912758289643571573291684164875293")) {
 			return RESULT_CORRECT;
 		} else {
-			return RESULT_INCORRECT;
+			return -1;
 		}
 	}
 }

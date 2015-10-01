@@ -45,3 +45,7 @@ RefactoringAction 1443689897504 TestSudokuVerifier.java RENAME SOLUTION_CORRECT=
 RefactoringAction 1443689951173 TestSudokuVerifier.java RENAME should_fail_on_incorrect_solution()=>void should_return_less_than_zero_on_incorrect_solution() METHOD
 RefactoringAction 1443689954229 TestSudokuVerifier.java RENAME should_return_less_than_zero_on_incorrect_solution()=>void should_return_less_than_zero_for_incorrect_solution() METHOD
 EditAction 1443689980821 TestSudokuVerifier.java 887 3 5 2
+UnitTestCaseAction 1443689981294 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1443689981295 TestSudokuVerifier FAIL
+RefactoringAction 1443690027437 SudokuVerifier.java REMOVE RESULT_INCORRECT FIELD
+EditAction 1443690040564 SudokuVerifier.java 561 1 1 0
