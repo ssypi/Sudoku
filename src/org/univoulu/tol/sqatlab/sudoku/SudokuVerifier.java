@@ -63,6 +63,7 @@ public class SudokuVerifier {
 				if (i == null || i < 0 || i > 9) rowsValid = false;
 			}
 		}
+		
 		if (!rowsValid) {
 			return FAIL_ROW_CONTAINS_MULTIPLES;
 		}

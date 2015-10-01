@@ -180,3 +180,6 @@ UnitTestCaseAction 1443695883056 TestSudokuVerifier.java FAIL
 UnitTestSessionAction 1443695883057 TestSudokuVerifier FAIL
 RefactoringAction 1443695968200 SudokuVerifier.java ADD int FAIL_ROW_CONTAINS_MULTIPLES FIELD
 EditAction 1443695976661 SudokuVerifier.java 2670 2 16 0
+UnitTestCaseAction 1443695977207 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1443695977208 TestSudokuVerifier FAIL
+EditAction 1443695991923 SudokuVerifier.java 2674 2 16 0
