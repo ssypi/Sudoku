@@ -54,4 +54,15 @@ public class TestSudokuVerifier {
 		int result = verifier.verify(testSolution);
 		assertEquals(-2, result);
 	}
+	
+	/**
+	 * R3: A digit can appear only once in the rows of the global grid.
+	 */
+	@Test
+	public void should_return_negative_three_if_row_contains_multiples() {
+		String testSolution = "417369825932158947658724316825437169791586432346912758289643571573291684164875293";
+		int result = verifier.verify(testSolution);
+		assertEquals(-3, result);
+	}
+	
 }

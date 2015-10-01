@@ -161,3 +161,13 @@ RefactoringAction 1443695108685 SudokuVerifier.java RENAME is=>boolean isSolutio
 RefactoringAction 1443695123277 SudokuVerifier.java RENAME isSolutionCorrectlyFormatted(String)=>void validate(String) METHOD
 RefactoringAction 1443695125813 SudokuVerifier.java RENAME validate(String)=>void validateSolutionFormat(String) METHOD
 EditAction 1443695320431 SudokuVerifier.java 1832 2 10 0
+UnitTestCaseAction 1443695320979 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443695320979 TestSudokuVerifier OK
+UnitTestCaseAction 1443695384586 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443695384586 TestSudokuVerifier OK
+RefactoringAction 1443695438295 TestSudokuVerifier.java ADD void should FIELD
+RefactoringAction 1443695441338 TestSudokuVerifier.java RENAME should=>void should_return_negative FIELD
+RefactoringAction 1443695444892 TestSudokuVerifier.java RENAME should_return_negative=>void should_return_negative_three_if_ FIELD
+RefactoringAction 1443695456942 TestSudokuVerifier.java RENAME should_return_negative_three_if_=>void should_return_negative_three_if_row_contains_multiples FIELD
+RefactoringAction 1443695457978 TestSudokuVerifier.java RENAME should_return_negative_three_if_row_contains_multiples=>void should_return_negative_three_if_row_contains_multiples() METHOD
+EditAction 1443695593432 TestSudokuVerifier.java 2121 8 16 4
