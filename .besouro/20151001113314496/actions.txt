@@ -146,3 +146,9 @@ UnitTestSessionAction 1443694560545 TestSudokuVerifier FAIL
 RefactoringAction 1443694605186 SubGrid.java ADD import java.util.Set IMPORT
 RefactoringAction 1443694680135 SubGrid.java ADD import java.util.HashSet IMPORT
 EditAction 1443694685149 SubGrid.java 822 3 6 0
+CompilationAction 1443694685523 SubGrid.java
+RefactoringAction 1443694700080 SubGrid.java REMOVE import java.util.List IMPORT
+CompilationAction 1443694712568 SubGrid.java
+UnitTestCaseAction 1443694713014 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1443694713016 TestSudokuVerifier FAIL
+EditAction 1443695047543 SubGrid.java 945 3 8 0

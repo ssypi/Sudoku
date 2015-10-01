@@ -3,7 +3,6 @@ package org.univoulu.tol.sqatlab.sudoku;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class SubGrid {
@@ -24,10 +23,18 @@ public class SubGrid {
 	}
 	
 	public boolean isValid() {
+		if (cells.size() != 9) {
+			return false;
+		}
+		for(Integer i : cells) {
+			if (i == null || i < 0 || i > 9) {
+				return false;
+			}
+		}
 		return true;
 	}
 	
-	public List<Integer> getCells() {
+	public Set<Integer> getCells() {
 		return cells;
 	}
 }
